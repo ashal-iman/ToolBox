@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Links by Category</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      margin: 30px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #444;
+      margin-bottom: 40px;
+    }
+
+    .category {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      margin-bottom: 25px;
+      transition: transform 0.2s;
+    }
+
+    .category:hover {
+      transform: scale(1.01);
+    }
+
+    .category h3 {
+      color: #2a6592;
+      margin-bottom: 10px;
+    }
+
+    .toggle-btn {
+      background-color: #e2ecf9;
+      color: #2a6592;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background-color: #c9dbf0;
+    }
+
+    .links {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .links a {
+      display: block;
+      margin: 6px 0;
+      padding: 6px 10px;
+      border-radius: 5px;
+      background-color: #f0f4f8;
+      text-decoration: none;
+      color: #1a4b7a;
+      transition: background-color 0.2s;
+    }
+
+    .links a:hover {
+      background-color: #d8e7f8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Helpful Links by Category</h1>
+
+  <div class="category">
+    <h3>📚 Education</h3>
+    <button class="toggle-btn" onclick="toggleLinks(this)">Show Links</button>
+    <div class="links">
+      <a href="https://www.khanacademy.org" target="_blank">Khan Academy</a>
+      <a href="https://www.coursera.org" target="_blank">Coursera</a>
+    </div>
+  </div>
+
+  <div class="category">
+    <h3>📰 News</h3>
+    <button class="toggle-btn" onclick="toggleLinks(this)">Show Links</button>
+    <div class="links">
+      <a href="https://www.bbc.com" target="_blank">BBC News</a>
+      <a href="https://www.cnn.com" target="_blank">CNN</a>
+    </div>
+  </div>
+
+  <div class="category">
+    <h3>💻 Technology</h3>
+    <button class="toggle-btn" onclick="toggleLinks(this)">Show Links</button>
+    <div class="links">
+      <a href="https://www.techcrunch.com" target="_blank">TechCrunch</a>
+      <a href="https://www.theverge.com" target="_blank">The Verge</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleLinks(button) {
+      const links = button.nextElementSibling;
+      if (links.style.display === "none" || links.style.display === "") {
+        links.style.display = "block";
+        button.textContent = "Hide Links";
+      } else {
+        links.style.display = "none";
+        button.textContent = "Show Links";
+      }
+    }
+  </script>
+
+</body>
+</html>
