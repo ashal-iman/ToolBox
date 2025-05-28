@@ -38,5 +38,25 @@ function applyFilters() {
     card.style.display = matches || selectedFilters.length === 0 ? 'block' : 'none';
   });
 }
+document.addEventListener('DOMContentLoaded', () => {
+  const checkboxes = document.querySelectorAll('.filters input[type="checkbox"]');
+  const cards = document.querySelectorAll('.card');
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', filterCards);
+  });
+
+  function filterCards() {
+    const activeFilters = Array.from(checkboxes)
+      .filter(cb => cb.checked)
+      .map(cb => cb.value.toLowerCase());
+
+    cards.forEach(card => {
+      const tags = card.getAttribute('data-tags').toLowerCase().split(" ");
+      const matches = activeFilters.every(filter => tags.includes(filter));
+      card.style.display = (activeFilters.length === 0 || matches) ? "block" : "none";
+    });
+  }
+});
 
 }
