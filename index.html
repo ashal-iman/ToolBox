@@ -2,102 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foster Youth Helpful Links</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-
-<header class="page-header">
-  <div class="left-header">
-    <img src="IMG_0067.PNG" alt="AWARENSEMBLE Logo" class="logo">
-    <div class="left-text">
-      <h1 class="main-title">AWARENSEMBLE</h1>
-      <p class="slogan"><i>prevention, protection, perception</i></p>
+  <header class="page-header">
+    <div class="left-header">
+      <img src="IMG_0067.PNG" alt="AWARENSEMBLE Logo" class="logo">
+      <div class="left-text">
+        <h1 class="main-title">AWARENSEMBLE</h1>
+        <p class="slogan"><i>prevention, protection, perception</i></p>
+      </div>
     </div>
+    <div class="center-header">
+      <h2 class="subtitle">Foster Youth Helpful Links</h2>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="mission.html">Our Mission</a></li>
+      <li><input type="text" id="searchBar" placeholder="Search..." onkeyup="searchLinks()"></li>
+    </ul>
+  </nav>
+
+  <div class="filters">
+    <label><input type="checkbox" name="filter" value="age16-18"> Age 16–18</label>
+    <label><input type="checkbox" name="filter" value="age18+"> Age 18+</label>
+    <label><input type="checkbox" name="filter" value="transitional"> Transitional Housing</label>
+    <label><input type="checkbox" name="filter" value="rent"> Rent Assistance</label>
+    <label><input type="checkbox" name="filter" value="housing"> Housing</label>
+    <label><input type="checkbox" name="filter" value="life-skills"> Life Skills</label>
+    <label><input type="checkbox" name="filter" value="mental-health"> Mental Health</label>
+    <label><input type="checkbox" name="filter" value="education-aid"> Scholarship/Education Aid</label>
+    <label><input type="checkbox" name="filter" value="government-aid"> Government Aid</label>
+    <label><input type="checkbox" name="filter" value="employment"> Employment Opportunities</label>
+    <label><input type="checkbox" name="filter" value="online"> Online</label>
+    <label><input type="checkbox" name="filter" value="in-person"> In-Person</label>
+    <label><input type="checkbox" name="filter" value="men-only"> Men Only</label>
+    <label><input type="checkbox" name="filter" value="women-only"> Women Only</label>
   </div>
-  <div class="center-header">
-    <h2 class="subtitle">Foster Youth Helpful Links</h2>
-  </div>
-</header>
 
-<nav class="navbar">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="mission.html">Our Mission</a></li>
-    <li><input type="text" id="searchBar" placeholder="Search..." onkeyup="searchLinks()"></li>
-  </ul>
-</nav>
+  <main>
+    <section>
+      <h2>Housing</h2>
+      <div class="grid">
+        <a class="card" href="https://211central.ca/record/75717704/" target="_blank" data-tags="transitional housing age16-18 age18+ in-person">
+          <h3><span class="categories">Friends of Ruby</span></h3>
+          <p>Transitional housing for 2SLGBTQIA+ youth ages 16–29</p>
+          <p>Address: 257 Dundas St E, Toronto, ON</p>
+        </a>
 
-<!-- Filters -->
-<div class="filters">
-  <label><input type="checkbox" name="filter" value="age16-18"> Age 16–18</label>
-  <label><input type="checkbox" name="filter" value="age18+"> Age 18+</label>
-  <label><input type="checkbox" name="filter" value="transitional"> Transitional Housing</label>
-  <label><input type="checkbox" name="filter" value="rent"> Rent Assistance</label>
-  <label><input type="checkbox" name="filter" value="housing"> Housing</label>
-  <label><input type="checkbox" name="filter" value="life-skills"> Life Skills</label>
-  <label><input type="checkbox" name="filter" value="mental-health"> Mental Health</label>
-  <label><input type="checkbox" name="filter" value="education-aid"> Scholarship/Education Aid</label>
-  <label><input type="checkbox" name="filter" value="government-aid"> Government Aid</label>
-  <label><input type="checkbox" name="filter" value="employment"> Employment Opportunities</label>
-  <label><input type="checkbox" name="filter" value="online"> Online</label>
-  <label><input type="checkbox" name="filter" value="in-person"> In-Person</label>
-  <label><input type="checkbox" name="filter" value="men-only"> Men Only</label>
-  <label><input type="checkbox" name="filter" value="women-only"> Women Only</label>
-</div>
+        <a class="card" href="https://covenanthousetoronto.ca/our-solution/housing-and-aftercare/" target="_blank" data-tags="transitional housing age16-18 age18+ in-person">
+          <h3><span class="categories">Covenant House</span></h3>
+          <p>Reception staff and youth workers are available to welcome youth day and night. 96 beds available and residents have access to showers, meals and programming.</p>
+          <p>Address: 20 Gerrard ST E, Toronto, ON</p>
+        </a>
 
-<!-- HOUSING SECTION -->
-<h2>Housing</h2>
-<div class="grid">
-  <!-- Cards omitted here for brevity but include same as original -->
-</div>
+        <a class="card" href="https://loftcs.org/housing/independent-living/" target="_blank" data-tags="transitional rent housing age16-18 age18+ in-person">
+          <h3><span class="categories">LOFT Independent Living</span></h3>
+          <p>Low-support housing through apartment buildings, shared homes and through our partnerships. Ongoing support provided to clients.</p>
+          <p>Address: 240 Edward St Unit 3, Aurora, ON L4G 3S9 </p>
+        </a>
 
-<!-- LIFE SKILLS SECTION -->
-<h2>Life Skills</h2>
-<div class="grid">
-  <!-- Cards omitted here for brevity -->
-</div>
+        <a class="card" href="https://horizonsforyouth.org/housing" target="_blank" data-tags="transitional housing age16-18 age18+ in-person">
+          <h3>Horizons for Youth</h3>
+          <p>Shelter for at-risk and homeless youth between the ages of 16-24 years old</p>
+          <p>Address: 422 Gilbert Ave, Toronto, ON</p>
+        </a>
 
-<!-- MENTAL HEALTH SECTION -->
-<h2>Mental Health</h2>
-<div class="grid">
-  <a class="card" href="https://stellasplace.ca/programs/" target="_blank" data-tags="age18+,mental-health,in-person">
-    <h3>Stella’s Place</h3>
-    <p>Peer support, therapy, and psychiatry for youth (18–29)</p>
-  </a>
-  <a class="card" href="https://yws.on.ca/how-we-help/mental-health-program/#" target="_blank" data-tags="age16-18,age18+,mental-health,in-person">
-    <h3>Youth Without Shelter</h3>
-    <p>Mental health support for Homeless Youth</p>
-    <p>Phone: 416.748.0110 | Fax: 416.748.2169 | Email: communications@yws.on.ca</p>
-  </a>
-  <a class="card" href="https://www.tngcommunityto.org/Programs-Services/Children-Youth" target="_blank" data-tags="age16-18,age18+,mental-health,in-person">
-    <h3>TNG Community</h3>
-    <p>Drug/alcohol support, youth violence prevention, and drop-in services</p>
-  </a>
-  <a class="card" href="https://onestoptalk.ca/kidsteens/how/" target="_blank" data-tags="age16-18,mental-health,online">
-    <h3>One Stop Talk</h3>
-    <p>Free virtual therapy for Ontario youth under 18</p>
-  </a>
-</div>
+        <a class="card" href="https://www.conccommunity.org/contact/" target="_blank" data-tags="transitional housing age18+ in-person men-only">
+          <h3>CONC Men's Shelter</h3>
+          <p>Men's Shelter for 68 men each night and 20 units of transitional housing.</p>
+          <p>Address: 973 Lansdowne Ave, Toronto, ON</p>
+        </a>
 
-<!-- SCHOLARSHIPS SECTION -->
-<h2>Scholarships & Education Aid</h2>
-<div class="grid">
-  <a class="card" href="https://futurestudents.yorku.ca/financing-your-degree/scholarships-bursaries" target="_blank" data-tags="education-aid,online">
-    <h3>YorkU Scholarships & Bursaries</h3>
-    <p>Explore financial support options for Future York University students.</p>
-  </a>
-  <a class="card" href="https://students.senecapolytechnic.ca/spaces/179/awards-scholarships-and-bursaries/wiki/view/8642/youth-in-care-tuition-bursary" target="_blank" data-tags="education-aid,online">
-    <h3>Seneca Youth in Care Bursary</h3>
-    <p>Full tuition bursary for eligible youth in care at Seneca College.</p>
-  </a>
-  <a class="card" href="https://cafdn.org/for-youth/workshops-and-events/" target="_blank" data-tags="education-aid,online">
-    <h3>Children’s Aid Foundation of Canada</h3>
-    <p>Workshops, events, and bursary opportunities for youth from care.</p>
-  </a>
-</div>
+        <a class="card" href="https://familyservicetoronto.org/our-services/programs-and-services/transitional-and-housing-support/" target="_blank" data-tags="transitional housing age18+ in-person women-only">
+          <h3>FST Housing</h3>
+          <p>Support for women-identified individuals after abuse or human trafficking. Interpreter services available.</p>
+          <p>Address: 128a Sterling Rd Toronto, ON M6R 2B7</p>
+        </a>
+      </div>
+    </section>
 
+    <section>
+      <h2>Life Skills</h2>
+      <div class="grid">
+        <a class="card" href="https://reachtoronto.ca/neuro-diverse-programs" target="_blank" data-tags="age16-18 age18+ life-skills in-person">
+          <h3>REACH Toronto</h3>
+          <p>Life skills programs for Neurodiverse 16+ youth and adults</p>
+          <p>Address: 88 Erskine Ave, Toronto, ON</p>
+        </a>
+
+        <a class="card" href="https://covenanthousetoronto.ca/our-solution/education-and-employment/" target="_blank" data-tags="age16-18 age18+ life-skills employment in-person">
+          <h3>Covenant House</h3>
+          <p>Cooking and life skills support for youth experiencing homelessness</p>
+          <p>Address: 20 Gerrard St E, Toronto, ON</p>
+        </a>
+
+        <a class="card" href="https://yws.on.ca/how-we-help/life-skills/" target="_blank" data-tags="age16-18 age18+ life-skills in-person">
+          <h3>Youth Without Shelter</h3>
+          <p>Life skills development programs for youth</p>
+          <p>Address: 6 Warrendale Court, Etobicoke, ON</p>
+        </a>
+
+        <a class="card" href="https://www.fosteringcommunity.ca/" target="_blank" data-tags="age16-18 age18+ life-skills employment in-person">
+          <h3>Fostering Community</h3>
+          <p>Free 2-day trades training and workshops for Foster Youth</p>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Mental Health</h2>
+      <div class="grid">
+        <a class="card" href="https://stellasplace.ca/programs/" target="_blank" data-tags="age18+ mental-health in-person">
+          <h3>Stella’s Place</h3>
+          <p>Peer support, therapy, and psychiatry for youth (18–29)</p>
+        </a>
+
+        <a class="card" href="https://yws.on.ca/how-we-help/mental-health-program/#" target="_blank" data-tags="age16-18 age18+ mental-health in-person">
+          <h3>Youth Without Shelter</h3>
+          <p>Mental health support for homeless youth</p>
+          <p>Phone: 416.748.0110 | Email: communications@yws.on.ca</p>
+        </a>
+
+        <a class="card" href="https://www.tngcommunityto.org/Programs-Services/Children-Youth" target="_blank" data-tags="age16-18 age18+ mental-health in-person">
+          <h3>TNG Community</h3>
+          <p>Support for drug/alcohol issues, youth violence prevention, and drop-ins</p>
+        </a>
+
+        <a class="card" href="https://onestoptalk.ca/kidsteens/how/" target="_blank" data-tags="age16-18 mental-health online">
+          <h3>One Stop Talk</h3>
+          <p>Free virtual therapy for Ontario youth under 18</p>
+        </a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
+
