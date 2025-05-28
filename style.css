@@ -243,6 +243,27 @@
   line-height: 1.6;
 }
 
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.filters label {
+  font-size: 0.9em;
+  background-color: #fff7f2;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #ddd;
+}
+
+.filters input[type="checkbox"] {
+  margin-right: 6px;
+}
 
 
 
