@@ -24,4 +24,19 @@ function searchLinks() {
       card.style.display = "none";
     }
   });
+  document.querySelectorAll('input[name="filter"]').forEach(input => {
+  input.addEventListener('change', applyFilters);
+});
+
+function applyFilters() {
+  const selectedFilters = Array.from(document.querySelectorAll('input[name="filter"]:checked'))
+                                .map(input => input.value);
+
+  document.querySelectorAll('.card').forEach(card => {
+    const tags = card.getAttribute('data-tags') || '';
+    const matches = selectedFilters.every(filter => tags.includes(filter));
+    card.style.display = matches || selectedFilters.length === 0 ? 'block' : 'none';
+  });
+}
+
 }
